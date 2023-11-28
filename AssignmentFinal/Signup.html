@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-light navbar-light ">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="Home.php">MT<b>Review</b></a>
+    </div>
+
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="Home.php">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Movies</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">AboutUs</a>
+        </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="Login.html"><i class="material-icons">person</i> Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="Signup.html"><i class="material-icons">login</i>SignUP</a>
+        </li>
+    </ul>
+</nav>
+
+  <div class="wrapper">
+    <div class="container main">
+        <div class="row">
+            <div class="col-md-6 side-image">
+            
+                
+                
+                <div class="text">
+                    <p>Join the Community of Movie Reactors<i>- MTReview</i></p>
+                </div>
+                
+            </div>
+
+            <div class="col-md-6 right">
+                
+                <div class="input-box">
+                   
+                   <header>Create account</header>
+                   
+                   <form action="SignupProcess.php" method="post">
+
+
+                    <div class="input-field form-group">
+                        <input type="text" class="input" id="firstName" required="" name="fname">
+                        <label for="firstName">First Name</label> 
+                    </div> 
+                   <div class="input-field form-group">
+                        <input type="text" class="input" id="lastName" required="" name="lname">
+                        <label for="lastName">Last Name</label>
+                    </div>
+                    <div class="input-field form-group">
+                        <input type="text" class="input" id="address" required=""name="addr">
+                        <label for="address">Address</label>
+                    </div>
+
+                    <div class="input-field form-group">
+                        <input type="text" class="input" id="email" required="" autocomplete="off" name="email">
+                        <label for="email">Email</label> 
+                    </div> 
+                   <div class="input-field form-group">
+                        <input type="password" class="input" id="pass" required="" name="password">
+                        <label for="pass">Password</label>
+                    </div> 
+                   <div class="input-field">
+                        
+                        <input type="submit" class="submit" value="SignUp">
+                   </div> 
+                </form>
+                   <div class="signin">
+                    <span>Already have an account? <a href="Login.html">Login Here</a></span>
+                   </div>
+                </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
